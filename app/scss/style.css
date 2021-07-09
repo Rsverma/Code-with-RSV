@@ -78,7 +78,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -86,7 +88,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Public Sans', sans-serif;
+  font-family: "Public Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: #9698a6;
@@ -104,7 +106,9 @@ body.noscroll {
   overflow: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 300;
   line-height: 1.15;
   color: #2d314d;
@@ -139,7 +143,9 @@ p {
   margin-bottom: 2.25rem;
 }
 
-a, a:visited, a:hover {
+a,
+a:visited,
+a:hover {
   text-decoration: none;
 }
 
@@ -231,7 +237,8 @@ a, a:visited, a:hover {
           align-items: center;
 }
 
-button, .button {
+button,
+.button {
   position: relative;
   display: inline-block;
   padding: 0.875rem 2.1875rem;
@@ -248,7 +255,8 @@ button, .button {
   overflow: hidden;
 }
 
-button::before, .button::before {
+button::before,
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -261,7 +269,8 @@ button::before, .button::before {
   transition: opacity 150ms ease-in-out;
 }
 
-button:hover::before, .button:hover::before {
+button:hover::before,
+.button:hover::before {
   opacity: 1;
 }
 
@@ -803,5 +812,15 @@ button:hover::before, .button:hover::before {
     -ms-grid-column-align: end;
         justify-self: end;
   }
+}
+
+.middle {
+  height: 27.5rem;
+  padding-top: 20rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
