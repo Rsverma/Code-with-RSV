@@ -296,6 +296,10 @@ button:hover::before, .button:hover::before {
           transform: rotate(-45deg);
 }
 
+.header .current-page {
+  color: #2d314d;
+}
+
 .header .overlay {
   opacity: 0;
   position: fixed;
@@ -380,8 +384,8 @@ button:hover::before, .button:hover::before {
   transition: opacity 300ms ease-in-out;
 }
 
-.header__links a:hover {
-  color: #2d314d;
+.header__links a:current-page {
+  color: red;
 }
 
 .header__links a:hover::before {
@@ -647,7 +651,7 @@ button:hover::before, .button:hover::before {
 .footer {
   background-color: #2d314d;
   color: white;
-  padding: 2.5rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -659,7 +663,7 @@ button:hover::before, .button:hover::before {
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-    gap: 1rem;
+        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
     justify-items: start;
   }
 }
