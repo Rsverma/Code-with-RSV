@@ -421,14 +421,14 @@ button:hover::before,
   background-image: url("/images/bg-intro-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 17.5rem;
+  background-size: 100%;
+  background-position: 50% 0%;
+  min-height: 12.5rem;
 }
 
 @media (min-width: 40em) {
   .hero__image {
     min-height: 25rem;
-    background-position: center 70%;
   }
 }
 
@@ -469,12 +469,6 @@ button:hover::before,
   background-position: center bottom;
 }
 
-@media (min-width: 40em) {
-  .hero__image::after {
-    background-size: 52%;
-  }
-}
-
 @media (min-width: 64em) {
   .hero__image::after {
     width: 120%;
@@ -487,17 +481,33 @@ button:hover::before,
 
 .hero__text {
   text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media (min-width: 64em) {
   .hero__text {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     text-align: left;
+  }
+  .hero__text .icon {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+.hero__text .icon {
+  height: 0%;
+  width: 0%;
+}
+
+@media (min-width: 64em) {
+  .hero__text .icon {
+    height: 50%;
+    width: 50%;
   }
 }
 
