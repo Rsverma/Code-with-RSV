@@ -4,6 +4,12 @@ const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has-fade');
 
+var element =  document.getElementById('demo');
+  // Output the result in an element with id="demo"
+
+  if (typeof(element) != 'undefined' && element != null)
+  {
+  
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
@@ -22,17 +28,17 @@ var countdownfunction = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+
+  element.innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
   
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    element.innerHTML = "EXPIRED";
   }
 }, 1000);
-
+}
 btnHamburger.addEventListener('click', function(){
   console.log('click hamburger');
 
