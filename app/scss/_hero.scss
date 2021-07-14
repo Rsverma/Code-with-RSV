@@ -70,13 +70,5 @@
     @include breakpoint-up(large) {
       text-align: left;
     }
-    .icon {
-      height: 0%;
-      width: 0%;
-      @include breakpoint-up(large) {
-        height: 30%;
-        width: 20%;
-      }
-    }
   }
 }
