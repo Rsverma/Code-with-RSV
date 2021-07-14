@@ -877,4 +877,143 @@ button:hover::before,
     font-size: 2.5rem;
   }
 }
+
+.social {
+  background-color: #2d314d;
+  height: 15rem;
+  padding: 4rem 0rem;
+  margin: 0;
+  /* Style the Un-order list by setting its list-style to none */
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+      and float them to left and set its border and border-radius.
+     */
+  /* Style the icons by setting its color and margin-top value to 20px 
+    to align it properly */
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+      to icons for glowing effect and use transition property for smooth transition effect. */
+  /* youtube */
+  /*facebook*/
+  /*linkedin*/
+  /*github*/
+  /*twitter*/
+  /* media queries */
+}
+
+@media (min-width: 40em) {
+  .social {
+    padding: 4rem 8rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .social {
+    padding: 4rem 25rem;
+  }
+}
+
+.social .wrapper ul {
+  list-style: none;
+  padding: 0% 2%;
+}
+
+.social .wrapper ul li {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 1px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #d8e2dc;
+  float: left;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+@media (min-width: 40em) {
+  .social .wrapper ul li {
+    margin: 0 10px;
+  }
+}
+
+.social .wrapper ul li .fa {
+  color: #d8e2dc;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover.youtube {
+  border: 5px solid #ff0000;
+  -webkit-box-shadow: 0 0 15px #ff0000;
+          box-shadow: 0 0 15px #ff0000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover .fa-youtube {
+  color: #ff0000;
+  text-shadow: 0 0 15px #ff0000;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  -webkit-box-shadow: 0 0 15px #3b5998;
+          box-shadow: 0 0 15px #3b5998;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover.linkedin {
+  border: 5px solid #0077b5;
+  -webkit-box-shadow: 0 0 15px #0077b5;
+          box-shadow: 0 0 15px #0077b5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover .fa-linkedin {
+  color: #0077b5;
+  text-shadow: 0 0 15px #0077b5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover.github {
+  border: 5px solid #4078c0;
+  -webkit-box-shadow: 0 0 15px #4078c0;
+          box-shadow: 0 0 15px #4078c0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover .fa-github {
+  color: #4078c0;
+  text-shadow: 0 0 15px #4078c0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  -webkit-box-shadow: 0 0 15px #00aced;
+          box-shadow: 0 0 15px #00aced;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.social .wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 /*# sourceMappingURL=style.css.map */

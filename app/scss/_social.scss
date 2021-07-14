@@ -1,0 +1,113 @@
+.social {
+  background-color: $darkBlue;
+  height: 15rem;
+  padding: 4rem 0rem;
+  margin: 0;
+  @include breakpoint-up(medium) {
+    padding: 4rem 8rem;
+  }
+  @include breakpoint-up(large) {
+    padding: 4rem 25rem;
+  }
+  /* Style the Un-order list by setting its list-style to none */
+  .wrapper ul {
+    list-style: none;
+    padding: 0% 2%;
+  }
+
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+      and float them to left and set its border and border-radius.
+     */
+  .wrapper ul li {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 0 1px;
+    @include breakpoint-up(medium) {
+      margin: 0 10px;
+    }
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #d8e2dc;
+    float: left;
+    transition: all 0.5s ease;
+  }
+
+  /* Style the icons by setting its color and margin-top value to 20px 
+    to align it properly */
+  .wrapper ul li .fa {
+    color: #d8e2dc;
+    transition: all 0.5s ease;
+  }
+
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+      to icons for glowing effect and use transition property for smooth transition effect. */
+
+  /* youtube */
+  .wrapper ul li:hover.youtube {
+    border: 5px solid #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-youtube {
+    color: #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+    transition: all 0.5s ease;
+  }
+
+  /*facebook*/
+  .wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+
+  /*linkedin*/
+  .wrapper ul li:hover.linkedin {
+    border: 5px solid #0077b5;
+    box-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-linkedin {
+    color: #0077b5;
+    text-shadow: 0 0 15px #0077b5;
+    transition: all 0.5s ease;
+  }
+
+  /*github*/
+  .wrapper ul li:hover.github {
+    border: 5px solid #4078c0;
+    box-shadow: 0 0 15px #4078c0;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-github {
+    color: #4078c0;
+    text-shadow: 0 0 15px #4078c0;
+    transition: all 0.5s ease;
+  }
+
+  /*twitter*/
+  .wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  .wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+  }
+
+  /* media queries */
+}
