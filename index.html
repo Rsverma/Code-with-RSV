@@ -26,18 +26,24 @@
         </a>
 
         <div class="header__links hide-for-mobile">
-          <a class="current-page" href="#">Home</a><a href="aboutus.html">About us</a><a href="courses.html">Courses</a><a href="contact.html">Contact</a>
+          <a class="current-page" href="#">Home</a>
+          <a href="#newsletter">Courses</a>
+          <a href="#aboutus">About us</a>
+          <a href="contact.html">Contact</a>
         </div>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
 
-        <a href="#" class="button header__cta hide-for-mobile">SignUp/Login</a>
+        <div class="g-ytsubscribe header__cta hide-for-mobile" data-channelid="UCHXfV0ENFtcM-rBEe3FyvAg" data-layout="default" data-theme="dark" data-count="hidden"></div>
     </nav>
 
     <div class="header__menu has-fade">
       <a class="current-page" href="#">Home</a>
-      <a href="aboutus.html">About us</a>
       <a href="courses.html">Courses</a>
+      <a href="aboutus.html">About us</a>
       <a href="contact.html">Contact</a>
     </div>
+    
 
   </header>
 
@@ -47,15 +53,71 @@
         
         <div class="hero__text container--pall">
           <img class="icon" src="/images/fulllogo.png" />
+          <p>Welcome to Code with RSV</p>
           <h1>
-            Learn C# in Hindi
+            Free C# tutorials and courses.
           </h1>
-          <p>
-            Go from beginner to expert with free C# courses available in Hindi. Sign Up now to keep track of your learning.
-          </p>
-          <a href="#" class="button hero__cta">SignUp/Login</a>
         </div>
     </div>
+  </section>
+  
+  <section id="newsletter" class="newsletter">
+    <div class="container">
+      <h3>GET NOTIFIED OF NEW COURSES</h3>
+      <form>
+        <input type="email" placeholder="Enter Email...">
+        <button type="submit" class="button_1">Subscribe!</button>
+      </form>
+      <p>YOUR EMAIL ADDRESS WILL NOT BE SHARED WITH ANYONE</p>
+    </div>
+  </section>
+
+  <section class="articles">
+
+  <div class="article__content container container--pall">
+
+    <h2>Latest Courses</h2>
+
+    <div class="article__grid">
+
+      <a href="https://youtu.be/Lw8ued_mcls" target="_blank" class="article__item">
+        <div class="article__image" style="background-image: url('/images/image-Csharp.png')"></div>
+        <div class="article__text">
+          <div class="article__author">Beginner</div>
+          <div class="article__title">C# Fundamentals for Beginners</div>
+          <div class="article__description">This course will teach you everything you need to know about basics of C sharp to start writing code and solving problems in C# language.</div>
+        </div>
+      </a>
+
+      <a href="https://youtube.com/playlist?list=PLmzGdRRZtjPceP7OcVywQlwZx9CEWBw44" target="_blank" class="article__item">
+        <div class="article__image" style="background-image: url('/images/image-OOP.png')"></div>
+        <div class="article__text">
+          <div class="article__author">Beginner</div>
+          <div class="article__title">Intermediate C#: OOP concepts</div>
+          <div class="article__description">This course will teach you about Object oriented programming concepts and how to use them in C# language. </div>
+        </div>
+      </a>
+
+      <a href="#" class="article__item">
+        <div class="article__image" style="background-image: url('/images/image-mediaPlayer.png')"></div>
+        <div class="article__text">
+          <div class="article__author">Intermediate</div>
+          <div class="article__title">Create a media player with WPF</div>
+          <div class="article__description">This is a project based course in which we will create a WPF media player with support for common features such as play pause and volume control.</div>
+        </div>
+      </a>
+
+      <a href="#" class="article__item">
+        <div class="article__image" style="background-image: url('/images/image-Async.jpg')"></div>
+        <div class="article__text">
+          <div class="article__author">Advanced</div>
+          <div class="article__title">Asynchronous programming in C#</div>
+          <div class="article__description">In this course we will look at asynchronous programming in C# and see how can we make our operations asynchronous while avoiding common pitfalls</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
   </section>
 
   <section id="aboutus" class="feature">
@@ -115,54 +177,6 @@
         </div>
     </div>
 
-  </section>
-
-  <section class="articles">
-
-  <div class="article__content container container--pall">
-
-    <h2>Latest Courses</h2>
-
-    <div class="article__grid">
-
-      <a href="https://youtu.be/Lw8ued_mcls" target="_blank" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-Csharp.png')"></div>
-        <div class="article__text">
-          <div class="article__author">Beginner</div>
-          <div class="article__title">C# Fundamentals for Beginners</div>
-          <div class="article__description">This course will teach you everything you need to know about basics of C sharp to start writing code and solving problems in C# language.</div>
-        </div>
-      </a>
-
-      <a href="https://youtube.com/playlist?list=PLmzGdRRZtjPceP7OcVywQlwZx9CEWBw44" target="_blank" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-OOP.png')"></div>
-        <div class="article__text">
-          <div class="article__author">Beginner</div>
-          <div class="article__title">Intermediate C#: OOP concepts</div>
-          <div class="article__description">This course will teach you about Object oriented programming concepts and how to use them in C# language. </div>
-        </div>
-      </a>
-
-      <a href="#" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-mediaPlayer.png')"></div>
-        <div class="article__text">
-          <div class="article__author">Intermediate</div>
-          <div class="article__title">Create a media player with WPF</div>
-          <div class="article__description">This is a project based course in which we will create a WPF media player with support for common features such as play pause and volume control.</div>
-        </div>
-      </a>
-
-      <a href="#" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-Async.jpg')"></div>
-        <div class="article__text">
-          <div class="article__author">Advanced</div>
-          <div class="article__title">Asynchronous programming in C#</div>
-          <div class="article__description">In this course we will look at asynchronous programming in C# and see how can we make our operations asynchronous while avoiding common pitfalls</div>
-        </div>
-      </a>
-
-    </div>
-  </div>
   </section>
 
   <footer class="footer">
