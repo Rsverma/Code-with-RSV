@@ -1,0 +1,35 @@
+.sponsor {
+  background-color: $lightGrayishBlue;
+}
+
+.sponsor {
+  &__grid {
+    display: flex;
+    height: 25rem;
+    padding-top: 2rem;
+    text-align: left;
+    flex-direction: row;
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__text {
+    padding: 5rem;
+    flex: 50%;
+  }
+
+  &__description {
+    font-size: 1.2125rem;
+  }
+  &__button {
+    color: Black;
+    margin-top: 1rem;
+    font-size: 1.2125rem;
+  }
+}
