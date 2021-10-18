@@ -1,262 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta class="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Code with RSV</title>
+	<!-- Don't forget to add your metadata here -->
+	<link rel='stylesheet' href='css/style.min.css' />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.png">
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="app/scss/style.css">
-  <title>Code with RSV</title>
-
+	<script src="https://apis.google.com/js/platform.js"></script>
 </head>
 <body>
+	<!-- Hero(extended) navbar -->
+	<div class="navbar navbar--extended">
+		<nav class="nav__mobile"></nav>
+		<div class="container">
+			<div class="navbar__inner">
+				<a href="index.html" class="navbar__logo">
+					<img src="images/logo-dark.svg" alt="Code with RSV" />
+				</a>
+				<nav class="navbar__menu">
+					<ul>
+						<li><a href="https://github.com/Rsverma/Learn-CSharp">Roadmap</a></li>
+						<li><a href="https://discord.gg/qYTcKnerpB">Join Community</a></li>
+					</ul>
+				</nav>
+				<div class="navbar__menu-mob"><a href="" id='toggle'><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" class=""></path></svg></a></div>
+			</div>
+		</div>
+	</div>
+	<!-- Hero unit -->
+	<div class="hero">
+		<div class="hero__overlay hero__overlay--gradient"></div>
+		<div class="hero__mask"></div>
+		<div class="hero__inner">
+			<div class="container">
+				<div class="hero__content">
+					<div class="hero__content__inner" id='navConverter'>
+						<h1 class="hero__title">Welcome to Code with RSV</h1>
+						<p class="hero__text">Code with RSV is an attempt to provide free learning content for C# and related technologies in Hindi in an organized manner. So that you don't have to get confused on where to go in your journey from a beginner to an expert.</p>
+						<a href="https://www.youtube.com/channel/UCHXfV0ENFtcM-rBEe3FyvAg" class="button button__accent">Visit channel</a>
+						<a href="https://discord.gg/qYTcKnerpB" class="button hero__button">Discord</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hero__sub">
+		<span id="scrollToNext" class="scroll">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/></svg>
+		</span>
+	</div>
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h2>What do we offer?</h2>
+			<p>Here are the main features of Code with RSV.</p>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/icon-online.svg" class="step__image">
+					</div>
+					<h4>🎓Learning Path</h4>
+					<p class="step__text">A complete roadmap for your learning with Web/Desktop/Gaming development courses based on preferences.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/icon-budgeting.svg" class="step__image">
+					</div>
+					<h4>💰 Completely free</h4>
+					<p class="step__text">No need to purchase any expensive courses for learning. All our courses are available for free and always will be.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/icon-onboarding.svg" class="step__image">
+					</div>
+					<h4>🌎 Community</h4>
+					<p class="step__text">Chance to be part of a growing community of fellow learners to share doubts, find project buddies or simply hangout.</p>
+				</div>
+				<div class="step">
+					<div class="step__media">
+						<img src="./images/icon-api.svg" class="step__image">
+					</div>
+					<h4>🐧 Open Source</h4>
+					<p class="step__text">Source code for all the created projects in our courses is available on Github. So you can easily lookup the final code in case of any issues.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Steps -->
+	<div class="steps landing__section">
+		<div class="container">
+			<h1>Latest Courses</h1>
+		</div>
+		<div class="container">
+			<div class="steps__inner">
+				<a class="step course" href="https://youtube.com/playlist?list=PLmzGdRRZtjPe9PgDQ3If_t1C7peiEzJ7y" target="_blank" >
+					<div class="step__media">
+						<img src="./images/image-Csharp.png" class="step__image">
+					</div>
+					<h4>C# Fundamentals</h4>
+					<h6 class="step__text">This course will teach you everything you need to know about basics of C sharp to start writing code and solving problems in C# language.</h6>
+				</a>
+				<a class="step course" href="https://youtube.com/playlist?list=PLmzGdRRZtjPceP7OcVywQlwZx9CEWBw44" target="_blank" >
+					<div class="step__media">
+						<img src="./images/image-OOP.png" class="step__image">
+					</div>
+					<h4>OOP concepts with C#</h4>
+					<h6 class="step__text">This course will teach you about Object oriented programming concepts and how to use them in C# language.</h6>
+				</a>
+				<a class="step course" href="https://youtube.com/playlist?list=PLmzGdRRZtjPfzZ62CQDI0Av1amiYmX2pN" target="_blank" >
+					<div class="step__media">
+						<img src="./images/image-SQL.png" class="step__image">
+					</div>
+					<h4>Introduction to SQL</h4>
+					<h6 class="step__text">This course will teach you everything you need to know about basics of SQL and how to use it to store and fetch data on disk.</h6>
+				</a>
+				<a class="step course" href="https://youtube.com/playlist?list=PLmzGdRRZtjPebypJoH20nmZBzWUelPESs" target="_blank" >
+					<div class="step__media">
+						<img src="./images/image-VS.png" class="step__image">
+					</div>
+					<h4>Visual Studio Tips</h4>
+					<h6 class="step__text">This course provides tips and tricks in Visual Studio which you can use to speed up your developemnt speed and improve you code quality.</h6>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- Expanded sections -->
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/undraw_Send_gift.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Support us</h2>
+					<p class="expanded__text">Code With RSV features free quality content via YouTube. Join our Patreon to show your support and gratitude. Even $1 per month means the world.</p>
+					<div><a href="https://www.patreon.com/bePatron?u=58823907" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="expanded landing__section">
+		<div class="container">
+			<div class="expanded__inner">
+				<div class="expanded__media">
+					<img src="./images/undraw_Agreement.svg" class="expanded__image">
+				</div>
+				<div class="expanded__content">
+					<h2 class="expanded__title">Sponsor our videos</h2>
+					<p class="expanded__text">If you are interested in sponsoring Code With RSV videos, please email us at following address for pricing and terms.</p>
 
-  <header class="header">
-    <div class="overlay has-fade"></div>
-    <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-        <a href="/" class="header__logo">
-          <img src="images/logo.svg" alt="Code with RSV" />
-        </a>
-
-        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-
-        <div class="header__links hide-for-mobile">
-          <a class="current-page" href="#">Home</a>
-          <a href="#newsletter">Courses</a>
-          <a href="#aboutus">About us</a>
-          <a href="#social">Contact</a>
-        </div>
-        <script src="https://apis.google.com/js/platform.js"></script>
-        <script src="https://apis.google.com/js/platform.js"></script>
-
-        <div class="g-ytsubscribe header__cta hide-for-mobile" data-channelid="UCHXfV0ENFtcM-rBEe3FyvAg" data-layout="default" data-theme="dark"></div>
-    </nav>
-
-    <div class="header__menu has-fade">
-      <a class="current-page" href="#">Home</a>
-      <a href="#newsletter">Courses</a>
-      <a href="#aboutus">About us</a>
-      <a href="#social">Contact</a>
-    </div>
-    
-
-  </header>
-
-  <section class="hero">
-    <div class="container">
-        <div class="hero__image"></div>
-        
-        <div class="hero__text container--pall">
-          <p>Welcome to Code with RSV</p>
-          <h1>
-            Free C# tutorials and courses.
-          </h1>
-        </div>
-    </div>
-  </section>
-  
-  <section id="newsletter" class="newsletter">
-    <div class="container">
-      <h3>GET NOTIFIED OF NEW COURSES</h3>
-      <form>
-        <input type="email" placeholder="Enter Email...">
-        <button type="submit" class="button_1">Subscribe!</button>
-      </form>
-      <p>YOUR EMAIL ADDRESS WILL NOT BE SHARED WITH ANYONE</p>
-    </div>
-  </section>
-
-  <section class="articles">
-
-  <div class="article__content container container--pall">
-
-    <h2>Latest Courses</h2>
-
-    <div class="article__grid">
-
-      <a href="https://youtu.be/Lw8ued_mcls" target="_blank" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-Csharp.png')"></div>
-        <div class="article__text">
-          <div class="article__author">Beginner</div>
-          <div class="article__title">C# Fundamentals for Beginners</div>
-          <div class="article__description">This course will teach you everything you need to know about basics of C sharp to start writing code and solving problems in C# language.</div>
-        </div>
-      </a>
-
-      <a href="https://youtube.com/playlist?list=PLmzGdRRZtjPceP7OcVywQlwZx9CEWBw44" target="_blank" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-OOP.png')"></div>
-        <div class="article__text">
-          <div class="article__author">Beginner</div>
-          <div class="article__title">Intermediate C#: OOP concepts</div>
-          <div class="article__description">This course will teach you about Object oriented programming concepts and how to use them in C# language. </div>
-        </div>
-      </a>
-
-      <a href="#" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-mediaPlayer.png')"></div>
-        <div class="article__text">
-          <div class="article__author">Intermediate</div>
-          <div class="article__title">Create a media player with WPF</div>
-          <div class="article__description">This is a project based course in which we will create a WPF media player with support for common features such as play pause and volume control.</div>
-        </div>
-      </a>
-
-      <a href="#" class="article__item">
-        <div class="article__image" style="background-image: url('/images/image-Async.jpg')"></div>
-        <div class="article__text">
-          <div class="article__author">Advanced</div>
-          <div class="article__title">Asynchronous programming in C#</div>
-          <div class="article__description">In this course we will look at asynchronous programming in C# and see how can we make our operations asynchronous while avoiding common pitfalls</div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-  </section>
-
-  <section id="aboutus" class="feature">
-
-    <div class="feature__content container container--pall">
-
-        <div class="feature__intro">
-          <div class="icon" >
-          <img src="/images/fulllogo.png" />
-          <a href="https://www.youtube.com/channel/UCHXfV0ENFtcM-rBEe3FyvAg" class="button">Visit channel</a>
-        </div>
-          <div class="content">
-            <h2>About us</h2>
-            <p>
-              Code with RSV is an attempt to provide free learning content for C# and related technologies in Hindi in an organized manner. So that you don't have to get confused on where to go in your journey from a beginner to an expert.
-            </p>
-          </div>
-        </div>
-    
-        <div class="feature__grid">
-          
-          <div class="feature__item">
-            <div class="feature__icon"><img src="/images/icon-online.svg" /></div>
-            <div class="feature__title">
-              🎓Learning Path
-            </div>
-            <div class="feature__description">
-              A complete roadmap for your learning with Web/Desktop/Gaming development courses based on preferences.
-            </div>
-          </div>
-    
-          <div class="feature__item">
-            <div class="feature__icon"><img src="/images/icon-budgeting.svg" /></div>
-            <div class="feature__title">
-              💰 Completely free
-            </div>
-            <div class="feature__description">
-              No need to purchase any expensive courses for learning. All our courses are available for free and always will be.
-            </div>
-          </div>
-    
-          <div class="feature__item">
-            <div class="feature__icon"><img src="/images/icon-onboarding.svg" /></div>
-            <div class="feature__title">
-              🌎 Community
-            </div>
-            <div class="feature__description">
-              Chance to be part of a growing community of fellow learners to share doubts, find project buddies or simply hangout.
-            </div>
-          </div>
-    
-          <div class="feature__item">
-            <div class="feature__icon"><img src="/images/icon-api.svg" /></div>
-            <div class="feature__title">
-              🐧 Open Source
-            </div>
-            <div class="feature__description">
-              Source code for all the created projects in our courses is available on Github. So you can easily lookup the final code in case of any issues.
-            </div>
-          </div>
-    
-        </div>
-    </div>
-  </section>
-
-  <section class="social" id ="social">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+					<div><b>E-Mail: </b><u>rsverma3333@gmail.com</u></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Call To Action -->
+	<div class="footer--dark">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <div class="wrapper">
-      <ul>
-        <li class="youtube"><a href="https://www.youtube.com/channel/UCHXfV0ENFtcM-rBEe3FyvAg"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
-        <li class="facebook"><a href="https://www.facebook.com/CodewithRSV"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-        <li class="linkedin"><a href="https://www.linkedin.com/in/rsverma333/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-        <li class="github"><a href="https://github.com/Rsverma"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-        <li class="twitter"><a href="https://twitter.com/rsverma3333"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
-      </ul>
+		<div class="wrapper__box">
+			<div class="youtube"><a href="https://www.youtube.com/channel/UCHXfV0ENFtcM-rBEe3FyvAg"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></div>
+			<div class="facebook"><a href="https://www.facebook.com/CodewithRSV"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></div>
+			<div class="linkedin"><a href="https://www.linkedin.com/in/rsverma333/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+			<div class="github"><a href="https://github.com/Rsverma"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+			<div class="twitter"><a href="https://twitter.com/rsverma3333"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></div>
+		</div>
     </div>
-  </section>
-  <section class="sponsor">
-
-    <div class="sponsor__grid">
-
-        <div class="sponsor__text">
-          <h1>Become a patron</h1>
-          <div class="sponsor__description">Code With RSV features free quality content via YouTube. Join our Patreon to show your support and gratitude. Even $1 per month means the world.</div>
-          <div class="sponsor__button"><a href="https://www.patreon.com/bePatron?u=58823907" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script src="https://c6.patreon.com/becomePatronButton.bundle.js"></script></div>
-        </div>
-
-        <div class="sponsor__text">
-          <h1>Sponsor our videos</h1>
-          <div class="sponsor__description">If you are interested in sponsoring Code With RSV videos, please email us at following address for pricing and terms</div>
-          <div class="sponsor__button"><b>E-Mail: </b><u>rsverma3333@gmail.com</u></div>
-        </div>
-
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-
-        <a class="footer__logo" href="#">
-            <img src="/images/logo-dark.svg" />
-          </a>
-      
-          <div class="footer__social">
-            <a href="https://www.youtube.com/channel/UCHXfV0ENFtcM-rBEe3FyvAg" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><title>YouTube</title><path fill="#FFF" d="M10.333 0c-5.522 0-10 4.478-10 10 0 5.523 4.478 10 10 10 5.523 0 10-4.477 10-10 0-5.522-4.477-10-10-10zm3.701 14.077c-1.752.12-5.653.12-7.402 0C4.735 13.947 4.514 13.018 4.5 10c.014-3.024.237-3.947 2.132-4.077 1.749-.12 5.651-.12 7.402 0 1.898.13 2.118 1.059 2.133 4.077-.015 3.024-.238 3.947-2.133 4.077zM8.667 8.048l4.097 1.949-4.097 1.955V8.048z"/></svg>
-            </a>
-            <a href="https://github.com/Rsverma" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><title>Github</title><path fill="#FFF" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/rsverma333/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><title>LinkedIN</title><path fill="#FFF" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/CodewithRSV" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><title>Facebook</title><path fill="#FFF" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg>
-            </a>
-          </div>
-      
-          <div class="footer__links col1">
-            <a href="#aboutus">About us</a>
-            <a href="#newsletter">Courses</a>
-          </div>
-      
-          <div class="footer__links col2">
-            <a href="#social">Contact us</a>
-            <a href="#">▲Go to top</a>
-          </div>
-      
-          <div class="footer__cta">
-            <a href="#" class="button">SignUp/Login</a>
-          </div>
-      
-          <div class="footer__copyright">
-            &copy; Code with RSV. All Rights Reserved.
-          </div>
-
-    </div>    
-  </footer>
-
-
-  <script src="/app/js/script.js"></script>
+	</div>
+	<!-- Footer -->
+	<div class="footer footer--dark">
+		<div class="container">
+			<div class="footer__inner">
+				<a href="/" class="footer__textLogo">
+					<img src="images/logo-dark.svg" alt="Code with RSV" />
+				</a>
+				<div class="footer__data">
+					<div class="footer__data__item">
+					</div>
+					<div class="footer__data__item">
+						<div class="footer__row">Theme from <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src='js/app.min.js'></script>
 </body>
 </html>
