@@ -21,7 +21,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="3.8057554"
-     inkscape:cx="28.772212"
+     inkscape:cx="80.010397"
      inkscape:cy="26.670132"
      inkscape:window-width="1366"
      inkscape:window-height="705"
@@ -67,13 +67,15 @@
   <text
      xml:space="preserve"
      id="text11511"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:192px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:-3.14025683px;word-spacing:0px;white-space:pre;shape-inside:url(#rect11513);fill:#e6e6e6;fill-opacity:1;stroke:none"
-     transform="matrix(0.06939769,0,0,0.07072452,-10.396241,-8.6006573)"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:192px;line-height:0;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;letter-spacing:-3.14026px;word-spacing:0px;white-space:pre;shape-inside:url(#rect11513);fill:#e6e6e6;fill-opacity:1;stroke:none"
+     transform="matrix(0.07145539,0,0,0.08663933,-12.395357,-13.199412)"
      x="785.01562"
      y="0"><tspan
-       x="578.87767"
+       x="578.87769"
        y="335.77344"
-       id="tspan144">Code with RSV</tspan></text>
+       id="tspan8927"><tspan
+         style="line-height:1.25"
+         id="tspan8925">Code with RSV</tspan></tspan></text>
   <image
      width="26.994329"
      height="16.748583"

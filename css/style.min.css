@@ -941,12 +941,9 @@ select::-ms-expand {
 }
 @media (min-width: 992px) {
   .steps__inner {
-    -js-display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 }
 .course {
@@ -959,6 +956,16 @@ select::-ms-expand {
 }
 .course:hover {
   transform: scale(1.05);
+}
+.project {
+  text-align: center;
+  width: 150pt;
+  border-radius: 0.3125rem;
+  margin-bottom: 10pt;
+  overflow: visible;
+  background-color: white;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.418);
+  transition: all 150ms ease-in-out;
 }
 .step {
   padding: 16pt 0;
@@ -1094,12 +1101,13 @@ select::-ms-expand {
   max-width: 60ch;
 }
 .wrapper {
-  height: 100pt;
   border-bottom: 1px solid gray;
   padding-top: 15pt;
+  padding-bottom: 5pt;
   display: flex;
   justify-content: space-around;
 }
+
 .wrapper__box div {
   width: 45pt;
   height: 45pt;
@@ -1194,7 +1202,7 @@ select::-ms-expand {
 
 .footer {
   background-color: #fff;
-  padding: 36pt 0;
+  padding: 16pt 0;
 }
 .footer__inner {
   -js-display: flex;
@@ -1308,6 +1316,54 @@ select::-ms-expand {
     color: #fff;
     border-color: #fff;
   }
+}
+.bars {
+  margin-bottom: 15px;
+}
+.info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+.column .right span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.line {
+  height: 5px;
+  width: 100%;
+  background: lightgrey;
+  position: relative;
+}
+.right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #463aff;
+}
+.right .net::before {
+  width: 90%;
+}
+.right .sql::before {
+  width: 90%;
+}
+.right .html::before {
+  width: 80%;
+}
+.right .js::before {
+  width: 60%;
+}
+.right .fin::before {
+  width: 50%;
+}
+.icons {
+  font-size: large;
+}
+.hide {
+  display: none;
 }
 .auth {
   padding-top: 102.66667px;
@@ -1426,6 +1482,9 @@ select::-ms-expand {
 }
 .page {
   padding: 24pt 0;
+}
+body {
+  background-color: rgb(230, 230, 230);
 }
 @media (min-width: 992px) {
   .page__inner {
