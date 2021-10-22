@@ -941,9 +941,12 @@ select::-ms-expand {
 }
 @media (min-width: 992px) {
   .steps__inner {
+    -js-display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
   }
 }
 .course {
@@ -960,11 +963,12 @@ select::-ms-expand {
 .project {
   text-align: center;
   width: 150pt;
+  padding: 2pt;
   border-radius: 0.3125rem;
   margin-bottom: 10pt;
   overflow: visible;
   background-color: white;
-  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.418);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
   transition: all 150ms ease-in-out;
 }
 .step {
@@ -1108,7 +1112,7 @@ select::-ms-expand {
   justify-content: space-around;
 }
 
-.wrapper__box div {
+.wrapper__box a {
   width: 45pt;
   height: 45pt;
   line-height: 45pt;
@@ -1121,7 +1125,7 @@ select::-ms-expand {
   transition: all 0.5s ease;
 }
 @media (min-width: 992px) {
-  .wrapper__box div {
+  .wrapper__box a {
     width: 70pt;
     height: 70pt;
     line-height: 70pt;
@@ -1130,71 +1134,71 @@ select::-ms-expand {
 }
 /* Style the icons by setting its color and margin-top value to 20px 
     to align it properly */
-.wrapper__box div .fa {
+.wrapper__box a .fa {
   color: #d8e2dc;
   transition: all 0.5s ease;
 }
 
 /* youtube */
-.wrapper__box div:hover.youtube {
+.wrapper__box a:hover.youtube {
   border: 5px solid #ff0000;
   box-shadow: 0 0 15px #ff0000;
   transition: all 0.5s ease;
 }
 
-.wrapper__box div:hover .fa-youtube {
+.wrapper__box a:hover .fa-youtube {
   color: #ff0000;
   text-shadow: 0 0 15px #ff0000;
   transition: all 0.5s ease;
 }
 
 /*facebook*/
-.wrapper__box div:hover.facebook {
+.wrapper__box a:hover.facebook {
   border: 5px solid #3b5998;
   box-shadow: 0 0 15px #3b5998;
   transition: all 0.5s ease;
 }
 
-.wrapper__box div:hover .fa-facebook {
+.wrapper__box a:hover .fa-facebook {
   color: #3b5998;
   text-shadow: 0 0 15px #3b5998;
   transition: all 0.5s ease;
 }
 
 /*linkedin*/
-.wrapper__box div:hover.linkedin {
+.wrapper__box a:hover.linkedin {
   border: 5px solid #0077b5;
   box-shadow: 0 0 15px #0077b5;
   transition: all 0.5s ease;
 }
 
-.wrapper__box div:hover .fa-linkedin {
+.wrapper__box a:hover .fa-linkedin {
   color: #0077b5;
   text-shadow: 0 0 15px #0077b5;
   transition: all 0.5s ease;
 }
 
 /*github*/
-.wrapper__box div:hover.github {
+.wrapper__box a:hover.github {
   border: 5px solid #4078c0;
   box-shadow: 0 0 15px #4078c0;
   transition: all 0.5s ease;
 }
 
-.wrapper__box div:hover .fa-github {
+.wrapper__box a:hover .fa-github {
   color: #4078c0;
   text-shadow: 0 0 15px #4078c0;
   transition: all 0.5s ease;
 }
 
 /*twitter*/
-.wrapper__box div:hover.twitter {
+.wrapper__box a:hover.twitter {
   border: 5px solid #00aced;
   box-shadow: 0 0 15px #00aced;
   transition: all 0.5s ease;
 }
 
-.wrapper__box div:hover .fa-twitter {
+.wrapper__box a:hover .fa-twitter {
   color: #00aced;
   text-shadow: 0 0 15px #00aced;
   transition: all 0.5s ease;
@@ -1484,7 +1488,7 @@ select::-ms-expand {
   padding: 24pt 0;
 }
 body {
-  background-color: rgb(230, 230, 230);
+  background-color: #f7f7f7;
 }
 @media (min-width: 992px) {
   .page__inner {
