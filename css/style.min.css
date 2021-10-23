@@ -1611,7 +1611,7 @@ select::-ms-expand {
     left: 0%;
   }
 }
-body {
+.page {
   background-color: #f7f7f7;
 }
 @media (min-width: 992px) {
